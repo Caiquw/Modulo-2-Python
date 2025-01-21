@@ -1,18 +1,18 @@
-import math
-peso = float(input("Insira seu peso:\n"))
-altura = float(input("Insira sua altura:\n"))
+valor = float(input("Valor a ser pago:\n"))
 
-imc = peso / pow(altura,2)
-
-print(round(imc,2))
-
-if imc < 18.5:
-    print("Abaixo do Peso")
-elif 18.5 <= imc <= 25:
-    print("Peso ideal")
-elif 25.1 <= imc <= 30:
-    print("Sobrepeso")
-elif 30 <= imc <= 40:
-    print("Obesidade")
-elif imc > 40:
-    print("Obesidade mórbida")
+escolha = int(input("""""Escolha a forma de pagamento:\n
+                    [1]Dinheiro/Cheque
+                    [2]À Vista no cartão
+                    [3]2x sem juros
+                    [4]3x ou mais no cartão"""))
+if escolha == 1:
+    valor-= (valor * 10) / 100
+    print("Valor a ser pago:",valor)
+elif escolha == 2:
+    valor-= (valor * 5) / 100
+    print("Valor a ser pago:",valor)
+elif escolha == 3:
+    print("Valor a ser pago:",valor)
+elif escolha == 4:
+    valor+= (valor * 20) / 100
+    print("Valor a ser pago:",valor)
